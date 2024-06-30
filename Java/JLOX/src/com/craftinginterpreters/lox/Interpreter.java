@@ -38,9 +38,9 @@ class Interpreter implements Expr.Visitor<Object> {
             case MINUS:
                 checkNumberOperand(expr.operator, right);
                 return -(double) right;
+            default:
+                return null;
         }
-        // Unreachable.
-        return null;
     }
 
     private void checkNumberOperand(Token operator, Object operand) {
