@@ -10,6 +10,7 @@ public class GenerateAst {
         String outputDir = System.getProperty("user.dir");
         defineAst(outputDir, "Expr", Arrays.asList(
                 "Assign : Token name, Expr value",
+                "Call : Expr callee, Token paren, List<Expr> arguments",
                 "Binary : Expr left, Token operator, Expr right",
                 "Grouping : Expr expression",
                 "Literal : Object value",
@@ -19,6 +20,8 @@ public class GenerateAst {
         defineAst(outputDir, "Stmt", Arrays.asList(
                 "Block : List<Stmt> statements",
                 "Expression : Expr expression",
+                "Function : Token name, List<Token> params," +
+                        " List<Stmt> body",
                 "If : Expr condition, Stmt thenBranch," +
                         " Stmt elseBranch",
                 "Print : Expr expression",
