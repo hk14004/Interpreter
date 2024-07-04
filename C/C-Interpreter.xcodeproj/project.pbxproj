@@ -11,6 +11,7 @@
 		C3D1500A2C37046C00B0A401 /* chunk.c in Sources */ = {isa = PBXBuildFile; fileRef = C3D150042C37046C00B0A401 /* chunk.c */; };
 		C3D1500B2C37046C00B0A401 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = C3D150062C37046C00B0A401 /* memory.c */; };
 		C3D1500C2C37046C00B0A401 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = C3D150082C37046C00B0A401 /* debug.c */; };
+		C3D1500F2C37080200B0A401 /* value.c in Sources */ = {isa = PBXBuildFile; fileRef = C3D1500E2C37080200B0A401 /* value.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		C3D150062C37046C00B0A401 /* memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memory.c; sourceTree = "<group>"; };
 		C3D150072C37046C00B0A401 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		C3D150082C37046C00B0A401 /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
+		C3D1500D2C37080200B0A401 /* value.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		C3D1500E2C37080200B0A401 /* value.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = value.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 		C3D14FED2C3702D000B0A401 /* C-Interpreter */ = {
 			isa = PBXGroup;
 			children = (
+				C3D1500D2C37080200B0A401 /* value.h */,
+				C3D1500E2C37080200B0A401 /* value.c */,
 				C3D150042C37046C00B0A401 /* chunk.c */,
 				C3D150052C37046C00B0A401 /* chunk.h */,
 				C3D150072C37046C00B0A401 /* common.h */,
@@ -136,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D1500F2C37080200B0A401 /* value.c in Sources */,
 				C3D150092C37046C00B0A401 /* main.c in Sources */,
 				C3D1500B2C37046C00B0A401 /* memory.c in Sources */,
 				C3D1500A2C37046C00B0A401 /* chunk.c in Sources */,
